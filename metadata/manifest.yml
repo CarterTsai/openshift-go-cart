@@ -1,9 +1,9 @@
 Name: go
 Cartridge-Short-Name: GO
-Display-Name: Go 1.5.2
-Version: "1.5.2"
-Versions: ["1.5.2","1.4.2","1.4.1", "1.4", "1.3.1","1.2.2","1.1.2", "1.0.3"]
-Website: https://github.com/smarterclayton/openshift-go-cart
+Display-Name: Go 1.8.3
+Version: "1.8.3"
+Versions: ["1.8.3"]
+Website: hhttps://github.com/CarterTsai/openshift-go-cart
 Cartridge-Version: 0.0.1
 Cartridge-Vendor: smarterclayton
 Categories:
@@ -11,12 +11,8 @@ Categories:
   - golang
   - web_framework
 Provides:
-  - go-1.5.2
+  - go-1.8.3
   - "go"
-  - "go (version) = 1.2.2"
-  - "go (version) = 1.1.2"
-  - "go (version) = 1.1"
-  - "go (version) = 1"
 Scaling:
   Min: 1
   Max: -1
@@ -59,14 +55,10 @@ Endpoints:
 Install-Build-Required: true
 Version-Overrides:
   '1.0.3':
-     Display-Name: Go 1.0.3
+     Display-Name: Go 1.8.3
      Provides:
-      - go-1.0
-      - "go"
-      - "go (version) = 1.0.3"
-      - "go (version) = 1.0"
-      - "go (version) = 1"
+      - go-1.8.3
      Group-Overrides:
        - components:
-         - go-1.0
+         - go-1.8.3
          - web_proxy
