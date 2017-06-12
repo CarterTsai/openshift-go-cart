@@ -21,7 +21,7 @@ The repository contains a sample go file which will print "hello, world" when so
 
 Any log output will be generated to <code>$OPENSHIFT_GO_LOG_DIR</code>.
 
-To provide your own custom GOPATH directory, add a ".gopath" file to the root of your Git repo with the desired GOPATH location, *relative to the $OPENSHIFT_HOMEDIR directory*. Example of a .gopath file content: `app-root/data/mygopath`. The specified location will be additive to the existing GOPATH provided by the cartridge as the *first path* declared in GOPATH (notice the [GOPATH spec](http://golang.org/cmd/go/#hdr-GOPATH_environment_variable) defines that "Go searches each directory listed in GOPATH to find source code, but new packages are always downloaded into the first directory in the list"). 
+To provide your own custom GOPATH directory, add a ".gopath" file to the root of your Git repo with the desired GOPATH location, *relative to the $OPENSHIFT_HOMEDIR directory*. Example of a .gopath file content: `app-root/data/mygopath`. The specified location will be additive to the existing GOPATH provided by the cartridge as the *first path* declared in GOPATH (notice the [GOPATH spec](http://golang.org/cmd/go/#hdr-GOPATH_environment_variable) defines that "Go searches each directory listed in GOPATH to find source code, but new packages are always downloaded into the first directory in the list").
 
 
 How it Works
@@ -38,3 +38,9 @@ Credits
 -------
 
 The bin/compile script is based on the [Heroku Go buildpack](https://github.com/kr/heroku-buildpack-go), adapted for OpenShift cartridges.
+
+
+Install
+-------
+Create App on Cartridges 
+https://cartreflect-claytondev.rhcloud.com/reflect?github=CarterTsai/openshift-go-cart
